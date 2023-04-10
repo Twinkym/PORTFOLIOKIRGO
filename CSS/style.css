@@ -71,6 +71,8 @@ button #Home,
 
 button:hover {
     border-radius: 25% 30%;
+    background-color: aqua;
+    color: cadetblue;
 }
 
 #Main-Container {
