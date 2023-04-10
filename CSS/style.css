@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background-image: url("/IMG/WEB_EN_CONSTRUCCION.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+}
