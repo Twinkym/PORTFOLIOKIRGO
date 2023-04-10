@@ -54,15 +54,26 @@ body {
 
 nav .menu {
     position: fixed;
-    margin: 15px 15px;
+    margin: 30px;
     margin-right: 0em;
     height: fit-content;
     float: right;
+}
 
+button #Home,
+#Portfolio,
+#About,
+#Contact {
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+button:hover {
+    border-radius: 25% 30%;
 }
 
 #Main-Container {
-    display: inline-flex;
     text-align: center;
     align-items: end;
     margin-top: 2em;
