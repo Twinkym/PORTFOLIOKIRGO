@@ -1,0 +1,114 @@
+/* :host {
+    --light-gradient: linear-gradient(270deg,
+            #f4f2f7 0%,
+            #fff0 100%);
+    --light-shade: linear-gradient(270deg,
+            #fff8 0%,
+            #fff0 100%);
+    --dark-gradient: linear-gradient(270deg,
+            #000 0%,
+            #0000 100%);
+    --dark-shade: linear-gradient(270deg,
+            #0008 0%,
+            #0000 100%);
+
+    box-sizing: border-box;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    color: var(--gx-widget-font-color);
+    height: 100vh;
+    overflow: visible;
+    position: relative;
+    width: max-content;
+}
+
+.panel {
+    --panel-gradient: var(--light-gradient);
+    --panel-shade: var(--light-shade);
+
+    height: 100vh;
+    min-width: 200px;
+    padding-right: 20px;
+    padding-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: right 0.6s ease-in-out;
+    width: 200px;
+}
+
+:host-context(html.sync-banner) .panel {
+    padding-top: 80px;
+}
+
+:host-context(html.sync-banner) .prompt {
+    top: 80px;
+}
+
+.hidden.panel {
+    right: -312px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .panel {
+        --panel-gradient: var(--dark-gradient);
+        --panel-shade: var(--dark-shade);
+    }
+}
+
+.panel::before {
+    z-index: 0;
+    background: var(--panel-gradient);
+}
+
+.panel::after {
+    z-index: 0;
+    background: var(--panel-shade);
+}
+
+.panel::before,
+.panel::after {
+    content: '';
+    height: 100vh;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 320px;
+}
+
+.hidden.panel::before {
+    pointer-events: initial;
+}
+
+.panel>* {
+    position: relative;
+    z-index: 1;
+}
+
+.panel>*+* {
+    display: block;
+    margin-top: 16px;
+}
+
+.prompt {
+    height: 197px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: right 0.666s ease-in-out;
+    width: 44px;
+    z-index: 1;
+}
+
+.hidden.prompt {
+    right: -44px;
+} */
