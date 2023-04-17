@@ -190,6 +190,78 @@ nav .menu {
     opacity: 0.8;
 }
 
+.droplet2 {
+    position: relative;
+    left: 60px;
+    background: #54abfb;
+    height: 50px;
+    width: 50px;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    opacity: 0.8;
+    border: 2px solid #3d93ff;
+}
+
+.droplet2::before {
+    content: "";
+    position: absolute;
+    background: #318cef;
+    height: 100%;
+    width: 100%;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    box-shadow: -10px 15px 8px #1b6cfb, -20px 30px 16px #1b6cfb,
+        inset -3px 3px 5px #1b6cfb, inset 1px 3px 5px #1a74e5,
+        inset 10px -10px 11px white, inset 20px -20px 22px #a8ceff;
+}
+
+.droplet2::after {
+    content: "";
+    position: absolute;
+    background: #e6fdfb;
+    height: 10px;
+    width: 10px;
+    border-radius: 44% 56% 46% 54% / 30% 50% 50% 64%;
+    left: 30px;
+    top: 10px;
+    box-shadow: 4px 12px 0 0.2px white;
+    opacity: 0.8;
+}
+
+.droplet3 {
+    position: relative;
+    left: 60px;
+    background: #54abfb;
+    height: 50px;
+    width: 50px;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    opacity: 0.8;
+    border: 2px solid #3d93ff;
+}
+
+.droplet3::before {
+    content: "";
+    position: absolute;
+    background: #318cef;
+    height: 100%;
+    width: 100%;
+    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+    box-shadow: -10px 15px 8px #1b6cfb, -20px 30px 16px #1b6cfb,
+        inset -3px 3px 5px #1b6cfb, inset 1px 3px 5px #1a74e5,
+        inset 10px -10px 11px white, inset 20px -20px 22px #a8ceff;
+}
+
+.droplet3::after {
+    content: "";
+    position: absolute;
+    background: #e6fdfb;
+    height: 10px;
+    width: 10px;
+    border-radius: 44% 56% 46% 54% / 30% 50% 50% 64%;
+    left: 30px;
+    top: 10px;
+    box-shadow: 4px 12px 0 0.2px white;
+    opacity: 0.8;
+}
+
 .contacto {
     position: absolute;
     inset: 30px 2.5px 3px;
