@@ -139,10 +139,11 @@ nav .menu {
 
 .droplet:hover,
 .droplet1:hover,
-{
-border-radius: 50% 30%;
-background-color: aqua;
-color: cadetblue;
+.droplet2:hover,
+.droplet3:hover {
+    border-radius: 50% 30%;
+    background-color: aqua;
+    color: cadetblue;
 }
 
 .portafolio {
