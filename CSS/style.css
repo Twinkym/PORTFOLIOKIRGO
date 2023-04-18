@@ -1,3 +1,7 @@
+:root {
+    --black: var(--black)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +12,7 @@ div .under-construction {
     display: flex;
     width: 14em;
     height: 14em;
-    background-image: url("/IMG/WEB_EN_CONSTRUCCION.jpg");
+    background-image: url("IMG/WEB_EN_CONSTRUCCION.jpg");
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -29,7 +33,7 @@ div .under-construction {
 .logo-link-title {
     display: inline-flex;
     justify-content: space-evenly;
-    width: 100%;
+    margin: auto;
     height: max-content;
     text-align: start;
 
@@ -54,7 +58,7 @@ div .under-construction {
 }
 
 .title {
-    margin: 30px;
+    margin: auto;
     font-family: 'Times New Roman', Times, serif;
     font-style: oblique;
     color: gray;
@@ -70,13 +74,15 @@ div .under-construction {
 }
 
 nav .menu {
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 30px;
+    padding-right: 60px;
     margin-right: 0em;
     height: max-content;
     float: right;
+    z-index: 60;
 }
 
 .button {
