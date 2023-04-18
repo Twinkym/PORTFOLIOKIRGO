@@ -278,4 +278,9 @@ nav .menu {
 
 #footer {
     background-image: repeating-linear-gradient(lightblue 15%, blue 10%, beige 70%);
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    text-align: center;
+    padding: 3px;
+
 }
