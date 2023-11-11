@@ -2,41 +2,55 @@
 <html lang="es">
 
 <head>
-    <meta charset="es/ES">
-    <meta name="viewport" content="width=device-content, initial-Scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-Scale=1.0">
     <meta name="author" content="David De La Puente - kirgo -">
     <meta name="description" content="Portfolio from kirgo make it with html, css & JS">
     <meta name="keywords" content="html, css, JS, Portfolio, carrusel, ">
     <title>Potfolio kirgo</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="CSS/matrix.css"> -->
+    <link rel="stylsheet" href="CSS/gotas.css">
 </head>
 
 <body>
 
     <header class="logo-link-title">
-        <section class="Logo"><a href="/IMG/Logo_KirgoDev_320.png" target="_blank" id="Logo-link"><img src="/IMG/Logo_KirgoDev_320.png"
+        <section class="Logo"><a target="_blank" id="Logo-link"><img src="IMG/Logo_KirgoDev_320.png"
                     alt="Logo developer kirgo" id="logo"></a>
         </section>
-        <h1 class="title">kirgo portfolio</h1>
+        <h1 class="title"><strong id=" titlek">kirgo</strong> <strong id="titlep">portfolio</strong> </h1>
         <nav class="menu">
-            <button type="button" id="Home">Home</button>
-            <button type="button" id="Portfolio">Portfolio</button>
-            <button type="button" id="About">About</button>
-            <button type="button" id="Contact">Contact</button>
+            <div class="droplet"><a href="Home" id="droplet">Home</a></div>
+            <div class="droplet1"><a href="#Portfolio">Portfolio</a></div>
+            <div class="droplet2"><a href="#About">About</a></div>
+            <div class="droplet3"><a href="#Contact">Contact</a></div>
         </nav>
     </header>
+    <hr>
+    <div class="under-construction"><img src="IMG/WEB_EN_CONSTRUCCION.jpg" id="under-construction"
+            alt="under-construction">
+        <p id="apologies">We ask you to forgive me for coming here to see my cousin playing lol, we are working hard to
+            bring you a
+            dynamic and
+            amazing portfolio, While we finish the works at home you can pass by any of my social network and thank you
+            some
+            feedback on what you find there, machas curious thanks.</p>
+    </div>
+    <hr>
     <main id="Main-Container">
-        
-        <section class="Portfolio">
-            
+        <canvas id="canvas"></canvas>
+        <hr>
+        <section class="Portfolio" id="Portfolio">
+
             <div>
-                <canvas width="500" height="500" id="lienzo"></canvas>
+
                 <h1 id="STProjects">Strong Typing Projects</h1>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
+                <iframe src="" frameborder="1" title="first-frame"></iframe>
+                <iframe src="" frameborder="1" title="second-frame"></iframe>
+                <iframe src="" frameborder="1" title="third-frame"></iframe>
+                <iframe src="" frameborder="1" title="fourth-frame"></iframe>
+                <iframe src="" frameborder="1" title="fifth-frame"></iframe>
             </div>
             <div>
                 <h1 id="ReactProjects">React Projects</h1>
@@ -48,23 +62,36 @@
             </div>
             <div>
                 <h1 id="Java Projects">Java Projects</h1>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
+                <iframe src="IMG/JAVA/1o.png" frameborder="1" title="first-frame"></iframe>
+                <iframe src="IMG/JAVA/Autenticar_por_token_David.png" frameborder="1" title="second-frame"></iframe>
+                <iframe src="IMG/JAVA/Metodo_Post_creación_de_listas_david_body_JSON.png" frameborder="1"
+                    title="third-frame"></iframe>
+                <iframe src="IMG/JAVA/captura_metodo_GET_David.png" frameborder="1" title="fourth-frame"></iframe>
+                <iframe src="IMG/JAVA/2-1.png" frameborder="1" title="fifth-frame" id="fifth-frame"></iframe>
             </div>
             <div>
                 <h1 id=".NET Projects">.NET Projects</h1>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
-                <iframe src="" frameborder="0"></iframe>
+                <iframe src="" frameborder="1" title="first-frame"></iframe>
+                <iframe src="" frameborder="1" title="second-frame"></iframe>
+                <iframe src="" frameborder="1" title="third-frame"></iframe>
+                <iframe src="" frameborder="1" title="fourth-frame"></iframe>
+                <iframe src="" frameborder="1" title="fifth-frame"></iframe>
             </div>
         </section>
+        <section class="About" id="About">
+
+        </section>
+
     </main>
-    <script src="/JS/main.js"></script>
+    <footer id="footer">
+        <aside class="social-networks">
+            <i class=" fa fa-linkedin" aria-hidden="true"></i>
+            <a src=""></a>
+        </aside>
+        <p>author: David de la Puente Enriquez - kirgo -</p>
+    </footer>
+    <!--<script src=" /JS/main.js"></script>-->
+    <script src="JS/matrixEffect.js"></script>
 </body>
 
 </html>
