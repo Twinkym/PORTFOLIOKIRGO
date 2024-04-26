@@ -1,3 +1,5 @@
+@import "./menu_styles.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
     --black: var(--black)
 }
@@ -152,14 +154,6 @@ nav .menu {
     color: cadetblue;
 }
 
-.portafolio {
-    position: absolute;
-    inset: 35px 10px;
-    text-decoration: none;
-    font-style: oblique;
-    font-size: small;
-}
-
 .droplet1 {
     position: relative;
     left: 60px;
@@ -280,6 +274,14 @@ nav .menu {
     text-align: center;
     align-items: end;
     margin-top: 2em;
+}
+
+.portfolio {
+    position: absolute;
+    inset: 35px 10px;
+    text-decoration: none;
+    font-style: oblique;
+    font-size: small;
 }
 
 #footer {
