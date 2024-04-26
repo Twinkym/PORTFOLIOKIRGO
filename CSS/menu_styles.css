@@ -1,10 +1,12 @@
+header {
+    margin: 5px;
+}
 nav .water-menu-drop-container {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 30vh;
     margin: .5rem 0 2rem 70%;
-    padding: 1rem;
     flex-wrap: wrap;
 }
 
@@ -21,11 +23,10 @@ nav .water-menu-drop-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-self: center;
     cursor: pointer;
     animation: alternate;
     transition: transform 8s ease-in-out;
-    margin: 0;
+    margin: 15vh;
 }
 
 a{
@@ -58,7 +59,7 @@ a{
     border-radius: 48% 45% 45% 42% / 42% 48% 43% 57%;
 }
 
-nav .water-drop-hidden{
+nav .water-drop-hidden{ 
     display: inline;
     visibility: hidden;
     animation: split-drop-1 8s forwards;
@@ -82,6 +83,10 @@ nav .water-drop-hidden{
     /* Asegura que el enlace ocupe toda la altura del contenedor */
     text-align: center;
     /* Alinea el texto horizontalmente */
+}
+
+#about, #portfolio, #contact {
+    visibility: hidden;
 }
 
 nav .water-drop-hidden::after {

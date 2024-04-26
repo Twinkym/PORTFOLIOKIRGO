@@ -8,21 +8,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-div .under-construction {
+body, html{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100%;
+    background: #fff;
+}
+
+.main-header {
+    position: relative;
     display: flex;
-    width: 14em;
-    height: 14em;
+    justify-content: space-around;
+    align-items: center;text-align: center;
+    width: 100%;
+    max-height: 33vh;
+    border: 1px solid #000;
+}
+
+.Logo {
+    padding: .3rem;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    max-width: 33vw;
+    max-height: 25vh;
+    background-color: aqua;
+    border-radius: 45%;
+}
+
+#logo {
+    padding: .1rem;
+    margin: 15;
+    max-width: 33vw;
+    max-height: 25vh;
+    border-radius: 45%;
+    border: 3px solid #000;
+    box-shadow: 10px 10px 10px rgba(45, 45, 75, .7);
+}
+
+.main-header h1 {
+    max-width: 33vw;
+    color: #54abfb;
+}
+
+/*  information and apologies section */
+
+div .under-construction {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: auto;
     background-image: url("IMG/WEB_EN_CONSTRUCCION.jpg");
     background-repeat: no-repeat;
     text-align: center;
 }
 
-#under-construction {
+div img #under-construction {
+    display: flex;
+    grid-template-columns: auto auto;
     position: relative;
-    margin: 0 auto 0 200px;
-    align-items: center;
+    margin: auto;
+    width: 300px;
+    height:  300px;
+    
 }
 
 #apologies {
@@ -32,32 +86,6 @@ div .under-construction {
 }
 
 
-.logo-link-title {
-    display: inline-flex;
-    justify-content: space-evenly;
-    margin: auto;
-    height: max-content;
-    text-align: start;
-
-}
-
-.Logo {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: max-content;
-    border-radius: 50%;
-    margin: 1em;
-    inset-inline: auto;
-
-}
-
-#logo {
-    width: 30%;
-    height: auto;
-    border-radius: 40%;
-    border: 3px solid #000;
-    box-shadow: 10px 10px 10px rgba(45, 45, 75, .7);
-}
 
 .title {
     margin: auto;
@@ -69,15 +97,12 @@ div .under-construction {
     padding: 1em;
 }
 
-#titlep {
-    -moz-text-align: right;
-    text-align: right;
-    writing-mode: vertical-rl;
-}
-
-nav .menu {
-    position: relative;
+nav .water-menu-drop-container {
     display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    float: right;
     flex-direction: column;
     margin: 30px;
     padding-right: 60px;
@@ -90,6 +115,97 @@ nav .menu {
 .button {
     padding: .2em;
     border: #000;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: column; */
+    justify-content: space-around;
+    align-items: stretch;
+    border-radius: 10px;
+    box-shadow: inset -10px -10px 10px rgba(0, 0, 0, .7), inset 10px 10px 10px rgba(255, 255, 255, .7);
+    text-align: center;
+    margin: 20px;
+    width: auto;
+    height: auto !important;
+    font-family: "Raleway", sans-serif;
+}
+
+.skills-title h2 {
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: inset -10px -10px 10px rgba(0, 0, 0, .7),
+        inset 10px 10px 10px rgba(255, 255, 255, .7);
+    padding: 2vh;
+    width: calc(100% - 40px);
+    margin: 20px;
+    text-align: center;
+
+}
+
+.frontend>#backend,
+h4,
+ul {
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: inset -10px -10px 10px rgba(0, 0, 0, .7), inset 10px 10px 10px rgba(255, 255, 255, .7);
+    line-height: 1em;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #000;
+    padding: 2vh 4vw;
+    margin-bottom: 4%;
+    /* max-width: 30vw; */
+    list-style: none;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    border: teal solid .2em;
+    margin: 20px;
+}
+
+.redes-section,
+.copyright-section,
+.contact-section {
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    flex-basis: 33.33%;
+
+}
+
+.copyright-section {
+    margin-left: 10px;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#backToTopBtn:hover {
+    background-color: #333;
 }
 
 #canvas {
