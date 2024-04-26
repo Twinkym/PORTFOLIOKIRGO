@@ -10,21 +10,24 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <title>Welcome to matrix - Kirgo Portfolio</title>
     <!-- Estilos -->
-    <link rel="stylesheet" href="Welcome.css" type="text/css" />
+    <link rel="stylesheet" href="./CSS/welcome.css" type="text/css" />
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Contenedor principal del sitio web -->
-    <canvas id="matrix-canvas"></canvas>
     <div id="overlay">
+
+    </div>
+    <canvas id="matrix-canvas">
         <div class="message">Bienvenido a la Matrix de Kirgo</div>
         <div class="pill-container">
-            <div class="pill-blue">"Elegir Pastilla ('azul')"</div>
-            <div class="pill-red">"Elegir Pastilla ('roja')"</div>
+            <button class="pill-blue" onclick="elegirPastilla()">"Elegir Pastilla ('azul')"</button>
+            <div class="pill-red" onclick="elegirPastilla()">"Elegir Pastilla ('roja')"</div>
         </div>
-    </div>
+    </canvas>
+
     <script src="./JS/welcome.js"></script>
 </body>
 

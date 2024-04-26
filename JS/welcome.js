@@ -10,13 +10,12 @@ canvas.width = window.screen.width;
 var ctx = canvas.getContext("2d");
 var columns = [];
 var iteraciones = 0;
-var mensajeMostrado = false;
 
 // Functions Definition /*----------------------------------------------*/
 
 // Inicialización de columnas
 
-for (var i = 0; i < 256; i++) {
+for (var i = 0; i < canvas.width / 10; i++) {
     columns[i] = 1;
 }
 
@@ -26,6 +25,9 @@ function step() {
     // Limpia el canvas
     ctx.fillStyle = "rgba(0,0,0,0.05)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    var fontsize = Math.floor(canvas.width / 50);
+    
 
     // Dibuja los caracteres de la animación
     ctx.fillStyle = "#0f0";
@@ -39,21 +41,46 @@ function step() {
     iteraciones++;
 
     //  Muestra el mensaje despues del primer ciclo
-    if (!mensajeMostrado && iteraciones >= 100) {
+    if (iteraciones == 150) {
         mostrarMensaje();
-        mensajeMostrado = true;
     }
 }
 
-// Funcion para mostrar el mensaje
+window.addEventListener('resize', function() {
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+})
+
+// Funcion para mostrar el mensaje después de un tiempo determinado
 function mostrarMensaje() {
-    ctx.fillStyle = "fff";
-    ctx.font = "20px Arial";
-    ctx.fillText("Escoje la pastilla Azul ó la pastilla Roja", 50, 50);
+    setTimeout(function () {
+        // Limpia el canvas
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Define el texto de bienvenida
+        var welcomeText = "Bienvenido a la matrix de Kirgo";
+
+        // Calcula el ancho del texto de bienvenida
+        var welcomeTextWidth = ctx.measureText(welcomeText).width;
+
+        // Calcula el espacio entre columnas
+        var spaceBetweenColumns = (canvas.width - welcomeTextWidth) / (welcomeText.length + 1);
+
+        // Calcula las posiciones de las columnas para el texto de bienvenida
+        var columnsToShowText = [];
+        for (var i = 0; i < welcomeText.length; i++) {
+            columnsToShowText.push(spaceBetweenColumns * (i + 1));
+        }
+
+        // Dibuja el texto de bienvenida en las columnas seleccionadas
+        ctx.fillStyle = "#fff";
+        ctx.font = "20px Arial";
+        columnsToShowText.forEach(function (column, index) {
+            ctx.fillText(welcomeText[index], column, canvas.height / 2 + index * 20);
+        });
+    }, 3000); // Mostrar el mensaje después de 3 segundos
 }
 
-// Inicio de la aplicación
-setInterval(step, 63);
 
 // Función para manejar la selección de la pastilla
 function elegirPastilla(color) {
@@ -66,3 +93,6 @@ function elegirPastilla(color) {
         location.reload();
     }
 }
+
+// Inicio de la aplicación
+setInterval(step, 63);
