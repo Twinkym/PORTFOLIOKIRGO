@@ -7,6 +7,7 @@
     <meta name="author" content="David De La Puente - kirgo -">
     <meta name="description" content="Portfolio from kirgo make it with html, css & JS">
     <meta name="keywords" content="html, css, JS, Portfolio, carrusel, ">
+    <meta http-equiv="refresh" content="0; URL=welcome.html">
     <title>Potfolio kirgo</title>
     <!-- Estilos -->
 
@@ -31,37 +32,47 @@
         </nav>
     </header>
     <hr>
-    <div class="under-construction"><img src="IMG/WEB_EN_CONSTRUCCION.jpg" id="under-construction"
-            alt="under-construction">
-        <p id="apologies">We ask you to forgive me for coming here to see my cousin playing lol, we are working hard to
+    <div class="under-construction-container">
+        <h2 id="under-construction-title">Under Construction</h2>
+        <div class="img-under-construction-container"><img src="IMG/WEB_EN_CONSTRUCCION.jpg" id="under-construction"
+                alt="under-construction"></div>
+        <p id="apologies">We ask you to forgive me for coming here to
+            see my cousin playing lol, we are working hard to
             bring you a
             dynamic and
-            amazing portfolio, While we finish the works at home you can pass by any of my social network and thank you
+            amazing portfolio, While we finish the works at home you
+            can pass by any of my social network and thank you
             some
             feedback on what you find there, machas curious thanks.</p>
     </div>
     <hr>
     <main id="Main-Container">
-        <article class="about-container">
-            <h2 id="about-title">Sobre mi</h2>
-            <div class="img-author">
-                <img src="./IMG/foto david cv.jfif" alt="fotografía de David Puente">
-            </div>
-            <p id="were">
-                Hello! I am kirgo a software developer that has reinvented itself after more than 25 years in the
-                construction where
-                I develop
-                different roles.
-                Since two years ago I started to do training related to development we, mobile and video games on this
-                website you will
-                be able to see some of my personal projects that vary from web pages,app’s and some small video game
-                project
-            </p>
-            <hr />
-            <p id="continue-about">
+        <section class="About" id="About">
+            <article class="about-container">
+                <h2 id="about-title">Sobre mi</h2>
+                <div class="img-author">
+                    <img src="./IMG/foto david cv.jfif" alt="fotografía de David Puente">
+                </div>
+                <p id="were">
+                    Hello! I am kirgo a software developer that has
+                    reinvented itself after more than 25 years in the
+                    construction where
+                    I develop
+                    different roles.
+                    Since 2020 I started to do training related to
+                    web development, mobile and video games on this
+                    website you will
+                    be able to see some of my personal projects that vary
+                    from web pages,app’s and some small video game
+                    project
+                </p>
+                <hr />
+                <p id="continue-about">
 
-            </p>
-        </article>
+                </p>
+            </article>
+        </section>
+
         <!-- Skills Section -->
         <div class="skills-title">
             <h2>Habilidades y conocimientos</h2>
@@ -122,48 +133,49 @@
                 </ul>
             </div>
         </section>
-        <canvas id="canvas"></canvas>
+        <!-- Portfolio section -->
+
         <hr>
         <section class="Portfolio" id="Portfolio">
+            <canvas id="canvas">
+                <div>
 
-            <div>
+                    <h1 id="STProjects">Strong Typing Projects</h1>
+                    <iframe src="" frameborder="1" title="first-frame"></iframe>
+                    <iframe src="" frameborder="1" title="second-frame"></iframe>
+                    <iframe src="" frameborder="1" title="third-frame"></iframe>
+                    <iframe src="" frameborder="1" title="fourth-frame"></iframe>
+                    <iframe src="" frameborder="1" title="fifth-frame"></iframe>
+                </div>
+                <div>
+                    <h1 id="ReactProjects">React Projects</h1>
+                    <iframe src="" frameborder="1" title="react-project"></iframe>
+                    <iframe src="" frameborder="1" title="nextjs-project"></iframe>
+                    <iframe src="" frameborder="1" title="react-project2"></iframe>
+                    <iframe src="" frameborder="1" title="gatsby-project"></iframe>
+                    <iframe src="" frameborder="1" title="vite-project"></iframe>
+                </div>
+                <div>
+                    <h1 id="Java Projects">Java Projects</h1>
+                    <iframe src="IMG/JAVA/1o.png" frameborder="1" title="first-frame"></iframe>
+                    <iframe src="IMG/JAVA/Autenticar_por_token_David.png" frameborder="1" title="second-frame"></iframe>
+                    <iframe src="IMG/JAVA/Metodo_Post_creación_de_listas_david_body_JSON.png" frameborder="1"
+                        title="third-frame"></iframe>
+                    <iframe src="IMG/JAVA/captura_metodo_GET_David.png" frameborder="1" title="fourth-frame"></iframe>
+                    <iframe src="IMG/JAVA/2-1.png" frameborder="1" title="fifth-frame" id="fifth-frame"></iframe>
+                </div>
+                <div>
+                    <h1 id=".NET Projects">.NET Projects</h1>
+                    <iframe src="" frameborder="1" title="first-frame"></iframe>
+                    <iframe src="" frameborder="1" title="second-frame"></iframe>
+                    <iframe src="" frameborder="1" title="third-frame"></iframe>
+                    <iframe src="" frameborder="1" title="fourth-frame"></iframe>
+                    <iframe src="" frameborder="1" title="fifth-frame"></iframe>
+                </div>
+            </canvas>
 
-                <h1 id="STProjects">Strong Typing Projects</h1>
-                <iframe src="" frameborder="1" title="first-frame"></iframe>
-                <iframe src="" frameborder="1" title="second-frame"></iframe>
-                <iframe src="" frameborder="1" title="third-frame"></iframe>
-                <iframe src="" frameborder="1" title="fourth-frame"></iframe>
-                <iframe src="" frameborder="1" title="fifth-frame"></iframe>
-            </div>
-            <div>
-                <h1 id="ReactProjects">React Projects</h1>
-                <iframe src="" frameborder="0" title="react-project"></iframe>
-                <iframe src="" frameborder="0" title="nextjs-project"></iframe>
-                <iframe src="" frameborder="0" title="react-project2"></iframe>
-                <iframe src="" frameborder="0" title="gatsby-project"></iframe>
-                <iframe src="" frameborder="0" title="vite-project"></iframe>
-            </div>
-            <div>
-                <h1 id="Java Projects">Java Projects</h1>
-                <iframe src="IMG/JAVA/1o.png" frameborder="1" title="first-frame"></iframe>
-                <iframe src="IMG/JAVA/Autenticar_por_token_David.png" frameborder="1" title="second-frame"></iframe>
-                <iframe src="IMG/JAVA/Metodo_Post_creación_de_listas_david_body_JSON.png" frameborder="1"
-                    title="third-frame"></iframe>
-                <iframe src="IMG/JAVA/captura_metodo_GET_David.png" frameborder="1" title="fourth-frame"></iframe>
-                <iframe src="IMG/JAVA/2-1.png" frameborder="1" title="fifth-frame" id="fifth-frame"></iframe>
-            </div>
-            <div>
-                <h1 id=".NET Projects">.NET Projects</h1>
-                <iframe src="" frameborder="1" title="first-frame"></iframe>
-                <iframe src="" frameborder="1" title="second-frame"></iframe>
-                <iframe src="" frameborder="1" title="third-frame"></iframe>
-                <iframe src="" frameborder="1" title="fourth-frame"></iframe>
-                <iframe src="" frameborder="1" title="fifth-frame"></iframe>
-            </div>
         </section>
-        <section class="About" id="About">
 
-        </section>
 
     </main>
     <!-- Back  to top button -->
@@ -171,11 +183,26 @@
 
     <!-- Footer -->
     <footer id="footer">
-        <aside class="social-networks">
-            <i class=" fa fa-linkedin" aria-hidden="true"></i>
-            <a src=""></a>
-        </aside>
-        <p>author: David de la Puente Enriquez - kirgo -</p>
+        <!-- social networks -->
+        <div class="redes-section">
+            <h2>Redes</h2>
+            <!-- Twitter -->
+            <a rel="noopener" id="twitter" href="https://twitter.com/daviddelapuent5" target="_blank"
+                role="button">Twitter<i class="fab fa-twitter fa-lg"></i></a>
+            <!-- Linkedin -->
+            <a rel="noopener" href="https://www.linkedin.com/in/daviddelapuente/" id="linkedin" target="_blank"><i
+                    class="fab fa-linkedin-in fa-2x"></i>Linkedin</a>
+
+        </div>
+        <!-- copyright section -->
+        <div class="copyright-section">
+            <p>© 2024 David de la Puente | Diseñado con HTML, CSS y JavaScript</p>
+        </div>
+
+        <div class="contact-section">
+            <span>Contact</span>
+        </div>
+
     </footer>
     <!--<script src=" /JS/main.js"></script>-->
     <!-- <script src="JS/matrixEffect.js"></script> -->
