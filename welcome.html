@@ -18,15 +18,15 @@
 <body>
     <!-- Contenedor principal del sitio web -->
     <div id="overlay">
-
-    </div>
-    <canvas id="matrix-canvas">
         <div class="message">Bienvenido a la Matrix de Kirgo</div>
         <div class="pill-container">
-            <button class="pill-blue" onclick="elegirPastilla()">"Elegir Pastilla ('azul')"</button>
-            <div class="pill-red" onclick="elegirPastilla()">"Elegir Pastilla ('roja')"</div>
+            <p class="message pill green">Escoje una opción "Azul entraras al mundo real donde tu serás el dueño de tu
+                destino, Roja volveras a la fantasia </p>
+            <button class="pill-blue" onclick="elegirPastilla('azul')">Pastilla Azul</button>
+            <button class="pill-red" onclick="elegirPastilla('roja')">Pastilla Roja</button>
         </div>
-    </canvas>
+    </div>
+    <canvas id="matrix-canvas"></canvas>
 
     <script src="./JS/welcome.js"></script>
 </body>

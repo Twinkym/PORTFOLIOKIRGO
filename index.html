@@ -2,26 +2,30 @@
 <html lang="es">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="David De La Puente - kirgo -">
     <meta name="description" content="Portfolio from kirgo make it with html, css & JS">
-    <meta name="keywords" content="html, css, JS, Portfolio, carrusel, ">
-    <meta http-equiv="refresh" content="0; URL=welcome.html">
+    <!-- Meta SEO -->
+    <meta name="keywords"
+        content="html, css, JS, Portfolio, carrusel, Java, Jquery, Mysql, Sql, Python, Django, VueJs, React, Angular, ">
+    <!-- Page title -->
     <title>Potfolio kirgo</title>
-    <!-- Estilos -->
-
+    <!-- Start Styles Section -->
     <!-- <link rel="stylesheet" href="CSS/matrix.css"> -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="./CSS/menu_styles.css">
+    <!-- End Styles Section -->
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Start Header Section -->
     <header class="main-header">
         <section class="Logo"><a><img class="logo" src="IMG/Logo_KirgoDev_320.png" alt="Logo developer kirgo"
                     id="logo"></a>
         </section>
+        <!--  Menu -->
         <h1><strong id="title">PORTFOLIO DAVID</strong></h1>
         <nav class="water-menu-drop-container">
             <div class="water-drop-item-home-button"><a href="Home" onclick="showHidden()">Menu</a></div>
@@ -31,7 +35,9 @@
             <div class="water-drop-hidden"><a href="#Contact" id="contact">Contact</a></div>
         </nav>
     </header>
+    <!--  End Header Section -->
     <hr>
+    <!-- Start Info & Apologies Section -->
     <div class="under-construction-container">
         <h2 id="under-construction-title">Under Construction</h2>
         <div class="img-under-construction-container"><img src="IMG/WEB_EN_CONSTRUCCION.jpg" id="under-construction"
@@ -45,8 +51,11 @@
             some
             feedback on what you find there, machas curious thanks.</p>
     </div>
+    <!-- End Info & Apologies Section -->
     <hr>
+    <!-- Start Main Content Section -->
     <main id="Main-Container">
+        <!--  About Me Section -->
         <section class="About" id="About">
             <article class="about-container">
                 <h2 id="about-title">Sobre mi</h2>
@@ -72,7 +81,7 @@
                 </p>
             </article>
         </section>
-
+        <!-- End About Me Section -->
         <!-- Skills Section -->
         <div class="skills-title">
             <h2>Habilidades y conocimientos</h2>
@@ -133,9 +142,9 @@
                 </ul>
             </div>
         </section>
-        <!-- Portfolio section -->
-
+        <!-- End Skills Section -->
         <hr>
+        <!-- Start Portfolio section -->
         <section class="Portfolio" id="Portfolio">
             <canvas id="canvas">
                 <div>
@@ -175,13 +184,15 @@
             </canvas>
 
         </section>
-
+        <!-- End Portfolio section -->
 
     </main>
-    <!-- Back  to top button -->
+    <!-- End  Main Section -->
+    <!-- Start Back  to top button -->
     <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+    <!--  End Back to top button -->
 
-    <!-- Footer -->
+    <!-- Start  Footer Section -->
     <footer id="footer">
         <!-- social networks -->
         <div class="redes-section">
@@ -204,10 +215,21 @@
         </div>
 
     </footer>
+    <!-- End Footer Section -->
+
+    <!-- Start Scripts Section -->
     <!--<script src=" /JS/main.js"></script>-->
     <!-- <script src="JS/matrixEffect.js"></script> -->
+    <!-- <script src="./JS/welcome.js"></script> -->
+    <script src="https://kit.fontawesome.com/61f7b39e8c.js" crossorigin="anonymous"></script>
+    <script type='text/javascript'
+        data-cfasync='false'> window.addEventListener('load', function () { setTimeout(function () { }) }); </script>
+    <script type='text/javascript' data-cfasync='false'> window.addEventListener('load', function () {
+            Pace.restart()
+        })</script>
     <script src="./JS/menu_gota.js"></script>
     <script src="./JS/back_to_top.js"></script>
+    <!--  End Scripts Section -->
 </body>
 
 </html>
