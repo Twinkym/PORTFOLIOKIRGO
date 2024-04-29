@@ -2,234 +2,33 @@
 <html lang="es">
 
 <head>
-    <!-- Meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="David De La Puente - kirgo -">
+    <meta name="author" content="David De La Puente Enriquez - Kirgo -">
     <meta name="description" content="Portfolio from kirgo make it with html, css & JS">
-    <!-- Meta SEO -->
-    <meta name="keywords"
-        content="html, css, JS, Portfolio, carrusel, Java, Jquery, Mysql, Sql, Python, Django, VueJs, React, Angular, ">
-    <!-- Page title -->
-    <title>Potfolio kirgo</title>
-    <!-- Start Styles Section -->
-    <!-- <link rel="stylesheet" href="CSS/matrix.css"> -->
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="./CSS/menu_styles.css">
-    <!-- End Styles Section -->
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, Portfolio, carrusel">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Welcome to matrix - Kirgo Portfolio</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./CSS/welcome.css" type="text/css" />
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Start Header Section -->
-    <header class="main-header">
-        <section class="Logo"><a><img class="logo" src="IMG/Logo_KirgoDev_320.png" alt="Logo developer kirgo"
-                    id="logo"></a>
-        </section>
-        <!--  Menu -->
-        <h1><strong id="title">PORTFOLIO DAVID</strong></h1>
-        <nav class="water-menu-drop-container">
-            <div class="water-drop-item-home-button"><a href="Home" onclick="showHidden()">Menu</a></div>
-            <div class="water-dr0p-hidden"><a href="#about" id="about">About</a></div>
-            <div class="water-drop-hidden"><a href="#portfolio" id="portfolio">Portfolio</a>
-            </div>
-            <div class="water-drop-hidden"><a href="#Contact" id="contact">Contact</a></div>
-        </nav>
-    </header>
-    <!--  End Header Section -->
-    <hr>
-    <!-- Start Info & Apologies Section -->
-    <div class="under-construction-container">
-        <h2 id="under-construction-title">Under Construction</h2>
-        <div class="img-under-construction-container"><img src="IMG/WEB_EN_CONSTRUCCION.jpg" id="under-construction"
-                alt="under-construction"></div>
-        <p id="apologies">We ask you to forgive me for coming here to
-            see my cousin playing lol, we are working hard to
-            bring you a
-            dynamic and
-            amazing portfolio, While we finish the works at home you
-            can pass by any of my social network and thank you
-            some
-            feedback on what you find there, machas curious thanks.</p>
+    <!-- Contenedor principal del sitio web -->
+    <div id="overlay">
+        <div class="message">Bienvenido a la Matrix de Kirgo</div>
+        <div class="pill-container">
+            <p class="message pill green">Escoje una opción "Azul entraras al mundo real donde tu serás el dueño de tu
+                destino, Roja volveras a la fantasia </p>
+            <button class="pill-blue" onclick="elegirPastilla('azul')">Pastilla Azul</button>
+            <button class="pill-red" onclick="elegirPastilla('roja')">Pastilla Roja</button>
+        </div>
     </div>
-    <!-- End Info & Apologies Section -->
-    <hr>
-    <!-- Start Main Content Section -->
-    <main id="Main-Container">
-        <!--  About Me Section -->
-        <section class="About" id="About">
-            <article class="about-container">
-                <h2 id="about-title">Sobre mi</h2>
-                <div class="img-author">
-                    <img src="./IMG/foto david cv.jfif" alt="fotografía de David Puente">
-                </div>
-                <p id="were">
-                    Hello! I am kirgo a software developer that has
-                    reinvented itself after more than 25 years in the
-                    construction where
-                    I develop
-                    different roles.
-                    Since 2020 I started to do training related to
-                    web development, mobile and video games on this
-                    website you will
-                    be able to see some of my personal projects that vary
-                    from web pages,app’s and some small video game
-                    project
-                </p>
-                <hr />
-                <p id="continue-about">
+    <canvas id="matrix-canvas"></canvas>
 
-                </p>
-            </article>
-        </section>
-        <!-- End About Me Section -->
-        <!-- Skills Section -->
-        <div class="skills-title">
-            <h2>Habilidades y conocimientos</h2>
-        </div>
-        <section class="skills-container">
-
-
-            <div class="forntend">
-                <div class="frontend">
-                    <h4>Front-End</h4>
-                </div>
-
-                <ul>
-                    <li>
-                        <i class="devicons devicons-html5-plain colored"><img src="./IMG/ICONOS/icons8-html5.svg"
-                                alt="logo_HTML"></i>
-                    </li>
-                    <li><i class="devicons devicons-css3-original colored"><img src="./IMG/ICONOS/icons8-css3.svg"
-                                alt="logo_CSS3"></i></li>
-                    <li><i class="devicons devicons-javascript_badge"></i><img src="./IMG/ICONOS/icons8-js.svg"
-                            alt="logo_JAVASCRIPT">
-                    </li>
-                    <li><i class="devicons devicons-jquerypng"></i><img src="./IMG/ICONOS/icons8-jquery.svg"
-                            alt="logo_JQuery">
-                    </li>
-                </ul>
-            </div>
-            <div class="backend">
-                <div id="backend">
-                    <h4>Back-End &amp;</h4>
-                </div>
-
-                <ul>
-                    <li><i class="devicons devicons-nodejs_small"></i><img src="./IMG/ICONOS/icons8-nodo-js.svg"
-                            alt="logo_NodeJS">
-                    </li>
-                    <li><i class="devicons devicons-C#"><img src="./IMG/ICONOS/icons8-c-sharp-logotipo.svg"
-                                alt="logo_C#"></i>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="frameworks">
-                <h4>Frameworks y bibliotecas:</h4>
-                <ul>
-                    <li><img src="./IMG/ICONOS/icons8-oreja.svg" alt="logo_Bootstrap"><img
-                            src="./IMG/ICONOS/icons8-hablar-con-descaro-a.svg" alt="logo_Sass"><i
-                            class="fas fa-sass fa-sm fa-fw"></i>
-                    </li>
-                    <li><i class="devicons devicons-react"></i><img src="./IMG/ICONOS/icons8-reaccionar-nativo.svg"
-                            alt="logo_React"></li>
-                </ul>
-            </div>
-            <div class="game-engines">
-                <h4>Game Engines</h4>
-                <ul>
-                    <li><img src="./IMG/ICONOS/icons8-unidad.svg" alt="logo_Unity"></li>
-                </ul>
-            </div>
-        </section>
-        <!-- End Skills Section -->
-        <hr>
-        <!-- Start Portfolio section -->
-        <section class="Portfolio" id="Portfolio">
-            <canvas id="canvas">
-                <div>
-
-                    <h1 id="STProjects">Strong Typing Projects</h1>
-                    <iframe src="" frameborder="1" title="first-frame"></iframe>
-                    <iframe src="" frameborder="1" title="second-frame"></iframe>
-                    <iframe src="" frameborder="1" title="third-frame"></iframe>
-                    <iframe src="" frameborder="1" title="fourth-frame"></iframe>
-                    <iframe src="" frameborder="1" title="fifth-frame"></iframe>
-                </div>
-                <div>
-                    <h1 id="ReactProjects">React Projects</h1>
-                    <iframe src="" frameborder="1" title="react-project"></iframe>
-                    <iframe src="" frameborder="1" title="nextjs-project"></iframe>
-                    <iframe src="" frameborder="1" title="react-project2"></iframe>
-                    <iframe src="" frameborder="1" title="gatsby-project"></iframe>
-                    <iframe src="" frameborder="1" title="vite-project"></iframe>
-                </div>
-                <div>
-                    <h1 id="Java Projects">Java Projects</h1>
-                    <iframe src="IMG/JAVA/1o.png" frameborder="1" title="first-frame"></iframe>
-                    <iframe src="IMG/JAVA/Autenticar_por_token_David.png" frameborder="1" title="second-frame"></iframe>
-                    <iframe src="IMG/JAVA/Metodo_Post_creación_de_listas_david_body_JSON.png" frameborder="1"
-                        title="third-frame"></iframe>
-                    <iframe src="IMG/JAVA/captura_metodo_GET_David.png" frameborder="1" title="fourth-frame"></iframe>
-                    <iframe src="IMG/JAVA/2-1.png" frameborder="1" title="fifth-frame" id="fifth-frame"></iframe>
-                </div>
-                <div>
-                    <h1 id=".NET Projects">.NET Projects</h1>
-                    <iframe src="" frameborder="1" title="first-frame"></iframe>
-                    <iframe src="" frameborder="1" title="second-frame"></iframe>
-                    <iframe src="" frameborder="1" title="third-frame"></iframe>
-                    <iframe src="" frameborder="1" title="fourth-frame"></iframe>
-                    <iframe src="" frameborder="1" title="fifth-frame"></iframe>
-                </div>
-            </canvas>
-
-        </section>
-        <!-- End Portfolio section -->
-
-    </main>
-    <!-- End  Main Section -->
-    <!-- Start Back  to top button -->
-    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
-    <!--  End Back to top button -->
-
-    <!-- Start  Footer Section -->
-    <footer id="footer">
-        <!-- social networks -->
-        <div class="redes-section">
-            <h2>Redes</h2>
-            <!-- Twitter -->
-            <a rel="noopener" id="twitter" href="https://twitter.com/daviddelapuent5" target="_blank"
-                role="button">Twitter<i class="fab fa-twitter fa-lg"></i></a>
-            <!-- Linkedin -->
-            <a rel="noopener" href="https://www.linkedin.com/in/daviddelapuente/" id="linkedin" target="_blank"><i
-                    class="fab fa-linkedin-in fa-2x"></i>Linkedin</a>
-
-        </div>
-        <!-- copyright section -->
-        <div class="copyright-section">
-            <p>© 2024 David de la Puente | Diseñado con HTML, CSS y JavaScript</p>
-        </div>
-
-        <div class="contact-section">
-            <span>Contact</span>
-        </div>
-
-    </footer>
-    <!-- End Footer Section -->
-
-    <!-- Start Scripts Section -->
-    <!--<script src=" /JS/main.js"></script>-->
-    <!-- <script src="JS/matrixEffect.js"></script> -->
-    <!-- <script src="./JS/welcome.js"></script> -->
-    <script src="https://kit.fontawesome.com/61f7b39e8c.js" crossorigin="anonymous"></script>
-    <script type='text/javascript'
-        data-cfasync='false'> window.addEventListener('load', function () { setTimeout(function () { }) }); </script>
-    <script type='text/javascript' data-cfasync='false'> window.addEventListener('load', function () {
-            Pace.restart()
-        })</script>
-    <script src="./JS/menu_gota.js"></script>
-    <script src="./JS/back_to_top.js"></script>
-    <!--  End Scripts Section -->
+    <script src="./JS/welcome.js"></script>
 </body>
 
 </html>

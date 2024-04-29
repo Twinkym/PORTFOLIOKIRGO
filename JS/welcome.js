@@ -74,7 +74,7 @@ function mostrarPastillas() {
 function elegirPastilla(color) {
     if (color === 'azul') {
         // Redirect the user to the page specified in `target` attribute of button when clicked.
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     } else if (color === 'roja') {
         // show triniti animation asking the user if that’s what he really wants
         alert('alert("¿Estás seguro? Ya has estado allí y sé que no quieres volver.\n\nPresiona Aceptar si quieres continuar,');
